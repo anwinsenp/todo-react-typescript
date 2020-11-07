@@ -6,7 +6,7 @@ type Props = TodoProps & {
     deleteTodo: (_id: string) => void
 }
 
-const Todo: React.FC<Props> = ({ todo, updateTodo, deleteTood }) => {
+const Todo: React.FC<Props> = ({ todo, updateTodo, deleteTodo }) => {
     const checkTodo: string = todo.status ? `line-through` : ""
     return (
         < div className="Card" >
