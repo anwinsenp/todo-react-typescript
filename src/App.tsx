@@ -49,6 +49,20 @@ const App: React.FC = () => {
       })
       .catch(err => console.log(err))
   }
+
+  return (
+    <main className='App'>
+      <h1>My Todos</h1>
+      <AddTodo saveTodo={handleSaveTodo} />
+      {todos.map((todo: ITodo) => (
+        <TodoItem
+          key={todo._id}
+          updateTodo={handleUpdateTodo}
+          deleteTodo={handleDeleteTodo}
+          todo={todo} />
+      ))}
+    </main>
+  )
 }
 
 export default App;
