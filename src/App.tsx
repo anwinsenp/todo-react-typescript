@@ -27,6 +27,17 @@ const App: React.FC = () => {
       })
       .catch(err => console.log(err))
   }
+
+  const handleUpdateTodo = (todo: ITodo): void => {
+    updateTodo(todo)
+      .then(({ status, data }) => {
+        if (status !== 200) {
+          throw new Error("Error! Todo not updated")
+        }
+        setTodos(data.todos)
+      })
+      .catch(err => console.log(err))
+  }
 }
 
 export default App;
