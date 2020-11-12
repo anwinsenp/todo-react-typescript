@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# todo-MERN-server
+> This repository demonstrates a todo web app front-end developed using ReactJS written in TypeScript.
+
+![](todo-image.png)
+
+## References
+
+1. Tutorial (<https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb>)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
